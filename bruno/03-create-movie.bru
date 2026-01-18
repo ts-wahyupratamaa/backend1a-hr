@@ -1,0 +1,20 @@
+meta {
+  name: Create Movie
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/movie
+  body: json
+}
+
+body:json {
+  "title": "Neon Skies",
+  "synopsis": "A detective unravels a case in a neon-drenched city.",
+  "director": "Lina Putri",
+  "genre": "Noir",
+  "releaseYear": 2023,
+  "rating": 8.3,
+  "posterUrl": "https://example.com/posters/neon-skies.jpg"
+}

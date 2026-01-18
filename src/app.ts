@@ -1,11 +1,11 @@
 import express from "express";
-import courseRoutes from "./routes/courseRoutes";
+import movieRoutes from "./routes/movieRoutes";
 import { errorHandler } from "./middleware/errorHandler";
 
 const app = express();
 
 app.use(express.json());
-app.use(courseRoutes);
+app.use(movieRoutes);
 app.use(errorHandler);
 
 export default app;

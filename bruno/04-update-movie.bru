@@ -1,0 +1,15 @@
+meta {
+  name: Update Movie
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{baseUrl}}/movie/{{movieId}}
+  body: json
+}
+
+body:json {
+  "title": "Neon Skies (Director's Cut)",
+  "rating": 8.7
+}
